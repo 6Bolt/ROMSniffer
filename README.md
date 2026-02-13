@@ -1,4 +1,4 @@
-ROMSniffer watches when a game starts on the output signals for MAME, DemulShooter, and other programs. It looks for "mame_start" and "game =" in the output signals. When a new game is detected, it will start a new program with the arguments supplied. The game or ROM name can be used in the arguments, using the %r% which will get replaced by the game or ROM name. When the program starts, it will be hidden, by hidding the command prompt that it runs in. When using the debug mode, it doesn't hide the command prompt. The user can also use the "-noHide" option, where the command prompt will not be hidden, but minimized instead. This program will run all the time, until the user closes it in the command prompt, if it is not hidden. If it is hidden, then the uses must use task mananger or a different way.    
+ROMSniffer watches when a game starts on the output signals for MAME, DemulShooter, and other programs. It looks for "mame_start" and "game =" in the output signals. When a new game is detected, it will start a new program with the arguments supplied. The game or ROM name can be used in the arguments, using the %r% which will get replaced by the game or ROM name. When the program starts, it will be hidden, by hiding the command prompt that it runs in. When using the debug mode, it doesn't hide the command prompt. The user can also use the "-noHide" option, where the command prompt will not be hidden, but minimized instead. This program will run all the time, until the user closes it in the command prompt, if it is not hidden. If it is hidden, then the uses must use task manager or a different way.    
 
 The program first needs the program that will be run when a new game has been found. Then after the program name, it is the arguments for the program, if needed. The game's name can be used in the arguments, by using %r%, which gets replaced by the game's name. 
 
@@ -39,5 +39,3 @@ ROMSniffer "Program Zed.exe" %r%.hor -noHide
 The command prompt will be minimized, and not hidden. When a game is found, it will run the ProgramZ.exe program, with the game's name with .hor. Let say "HOTD4" was started in TeknoParrot with DemulShooter. It will run the program below.
 
 Program Zed.exe HOTD4.hor
-
-
